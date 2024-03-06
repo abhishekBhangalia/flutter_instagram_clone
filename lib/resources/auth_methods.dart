@@ -93,4 +93,9 @@ class AuthMethods {
 
     return model.User.getUserFromSnap(snapshot);
   }
+
+
+  Future<void> signOut() async {
+    await _auth.signOut();
+  }
 }
